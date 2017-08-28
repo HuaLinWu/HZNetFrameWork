@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "HZHTTPResponseModel.h"
 @interface HZNetFrameWorkTests : XCTestCase
 
 @end
@@ -35,5 +35,9 @@
         // Put the code you want to measure the time of here.
     }];
 }
-
+- (void)testResonseModelExample {
+    NSString *str = @"{\"status\": 0,\"data\": {\"default_bots\": [{\"isFriend\": true,\"roomId\": \"!twieHPsdrBcyPvLzzh:gsfin.com.cn\",\"displayName\": \"报销助手\",\"botId\": \"@expense-bot:gsfin.com.cn\",\"desc\": \"需要报销怎么办？不用负责的流程，直接找我报销助手吧，我可以很快的帮你完成报销\"}]}}";
+    HZHTTPResponseModel *model = [[HZHTTPResponseModel alloc] initWithResponseObject:str error:nil];
+    NSLog(@"---222-->%@",model.object);
+}
 @end
