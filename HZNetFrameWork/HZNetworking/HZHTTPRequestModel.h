@@ -16,25 +16,25 @@
 @property(nonatomic, readonly, copy) NSDictionary *parameters;
 
 + (instancetype)GET:(NSString *)URLString
-         parameters:(nullable NSDictionary *)parameters
+         parameters:(NSDictionary *)parameters
      taskIdentifier:(NSInteger)taskIdentifier;
 
 + (instancetype)HEAD:(NSString *)URLString
-          parameters:(nullable NSDictionary *)parameters
+          parameters:(NSDictionary *)parameters
       taskIdentifier:(NSInteger)taskIdentifier;
 
 + (instancetype)POST:(NSString *)URLString
-                             parameters:(nullable NSDictionary *)parameters
-                        constructingBody:(nullable NSDictionary<NSString *, NSData *> *)bodyDataDict
+                             parameters:(NSDictionary *)parameters
+                        constructingBody:(NSDictionary<NSString *, NSData *> *)bodyDataDict
                          taskIdentifier:(NSInteger)taskIdentifier;
 
 + (instancetype)PUT:(NSString *)URLString
-                            parameters:(nullable NSDictionary *)parameters
+                            parameters:(NSDictionary *)parameters
                         taskIdentifier:(NSInteger)taskIdentifier;
 + (instancetype)PATCH:(NSString *)URLString
-                              parameters:(nullable NSDictionary *)parameters
+                              parameters:(NSDictionary *)parameters
                           taskIdentifier:(NSInteger)taskIdentifier;
 + (instancetype)DELETE:(NSString *)URLString
-            parameters:(nullable NSDictionary *)parameters
+            parameters:(NSDictionary *)parameters
         taskIdentifier:(NSInteger)taskIdentifier;
 @end

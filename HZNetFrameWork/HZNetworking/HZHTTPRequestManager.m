@@ -7,7 +7,7 @@
 //
 
 #import "HZHTTPRequestManager.h"
-#import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFHTTPSessionManager.h>
 @interface HZHTTPRequestManager()
 @property(nonatomic, strong)AFHTTPSessionManager *afManager;
 @end
