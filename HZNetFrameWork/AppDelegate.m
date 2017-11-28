@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ViewController *viewController = [[ViewController alloc] init];
+    UITabBarController *tab = [[UITabBarController alloc] init];
+    [tab setViewControllers:@[viewController]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tab];
+    [nav.navigationBar setTranslucent:NO];
+    viewController.definesPresentationContext = NO;
+    self.window.rootViewController = nav;
     return YES;
 }
 

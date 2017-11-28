@@ -9,13 +9,21 @@
 #import "ViewController.h"
 #import "HZHTTPRequestManager.h"
 @interface ViewController ()
-
+@property(nonatomic,strong)UISearchController *searchController;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = self;
+   self.searchController.delegate = self;
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    self.searchController.hidesNavigationBarDuringPresentation = YES;
+    [self.view addSubview:_searchController.searchBar];
+   self.definesPresentationContext = YES;
 }
 
 - (IBAction)sendRequest:(UIButton *)sender {
@@ -35,7 +43,9 @@
     }];
     
 }
-
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

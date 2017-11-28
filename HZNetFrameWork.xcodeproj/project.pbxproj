@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6E50BF57D701CC142C8978A1 /* libPods-HZNetFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 120B5FB8A9D2A42C9B91F2D0 /* libPods-HZNetFrameWork.a */; };
+		FE4573181FCC08C100B44F1C /* GSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4573171FCC08C100B44F1C /* GSNetWorkManager.m */; };
+		FE45731D1FCCF53D00B44F1C /* GSBaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE45731C1FCCF53D00B44F1C /* GSBaseNetRequest.m */; };
+		FE4573201FCCF59D00B44F1C /* GSBaseNetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FE45731F1FCCF59D00B44F1C /* GSBaseNetResponse.m */; };
+		FE4573271FCCF66800B44F1C /* GSBaseNetError.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4573261FCCF66800B44F1C /* GSBaseNetError.m */; };
+		FE45732B1FCD368800B44F1C /* GSFileBaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE45732A1FCD368800B44F1C /* GSFileBaseNetRequest.m */; };
 		FECF48F01FAD59B1006C96EE /* HZHTTPRequestHeaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FECF48E91FAD5745006C96EE /* HZHTTPRequestHeaderConfig.m */; };
 		FECF48F11FAD59B1006C96EE /* HZHTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FECF48EB1FAD5745006C96EE /* HZHTTPRequestManager.m */; };
 		FECF48F21FAD59B1006C96EE /* HZHTTPRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FECF48ED1FAD5745006C96EE /* HZHTTPRequestModel.m */; };
@@ -44,6 +49,20 @@
 		120B5FB8A9D2A42C9B91F2D0 /* libPods-HZNetFrameWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZNetFrameWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB7836B397C94995188C106 /* Pods-HZNetFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZNetFrameWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZNetFrameWork/Pods-HZNetFrameWork.release.xcconfig"; sourceTree = "<group>"; };
 		AC048BCBDB653730D884807A /* Pods-HZNetFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZNetFrameWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZNetFrameWork/Pods-HZNetFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
+		FE4573161FCC08C100B44F1C /* GSNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNetWorkManager.h; sourceTree = "<group>"; };
+		FE4573171FCC08C100B44F1C /* GSNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNetWorkManager.m; sourceTree = "<group>"; };
+		FE4573191FCCF44F00B44F1C /* GSINetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSINetRequest.h; sourceTree = "<group>"; };
+		FE45731A1FCCF47100B44F1C /* GSINetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSINetResponse.h; sourceTree = "<group>"; };
+		FE45731B1FCCF53D00B44F1C /* GSBaseNetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseNetRequest.h; sourceTree = "<group>"; };
+		FE45731C1FCCF53D00B44F1C /* GSBaseNetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseNetRequest.m; sourceTree = "<group>"; };
+		FE45731E1FCCF59D00B44F1C /* GSBaseNetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseNetResponse.h; sourceTree = "<group>"; };
+		FE45731F1FCCF59D00B44F1C /* GSBaseNetResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseNetResponse.m; sourceTree = "<group>"; };
+		FE4573241FCCF60200B44F1C /* GSINetError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSINetError.h; sourceTree = "<group>"; };
+		FE4573251FCCF66800B44F1C /* GSBaseNetError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseNetError.h; sourceTree = "<group>"; };
+		FE4573261FCCF66800B44F1C /* GSBaseNetError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseNetError.m; sourceTree = "<group>"; };
+		FE4573281FCD35CA00B44F1C /* GSIFileNetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSIFileNetRequest.h; sourceTree = "<group>"; };
+		FE4573291FCD368800B44F1C /* GSFileBaseNetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSFileBaseNetRequest.h; sourceTree = "<group>"; };
+		FE45732A1FCD368800B44F1C /* GSFileBaseNetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSFileBaseNetRequest.m; sourceTree = "<group>"; };
 		FECF48E81FAD5745006C96EE /* HZHTTPRequestHeaderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZHTTPRequestHeaderConfig.h; sourceTree = "<group>"; };
 		FECF48E91FAD5745006C96EE /* HZHTTPRequestHeaderConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZHTTPRequestHeaderConfig.m; sourceTree = "<group>"; };
 		FECF48EA1FAD5745006C96EE /* HZHTTPRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZHTTPRequestManager.h; sourceTree = "<group>"; };
@@ -159,6 +178,20 @@
 				FEFA0DFD1F4FB3B50044E23E /* ViewController.h */,
 				FEFA0DFE1F4FB3B50044E23E /* ViewController.m */,
 				FEFA0E001F4FB3B50044E23E /* Main.storyboard */,
+				FE4573161FCC08C100B44F1C /* GSNetWorkManager.h */,
+				FE4573171FCC08C100B44F1C /* GSNetWorkManager.m */,
+				FE4573191FCCF44F00B44F1C /* GSINetRequest.h */,
+				FE4573281FCD35CA00B44F1C /* GSIFileNetRequest.h */,
+				FE45731B1FCCF53D00B44F1C /* GSBaseNetRequest.h */,
+				FE45731C1FCCF53D00B44F1C /* GSBaseNetRequest.m */,
+				FE4573291FCD368800B44F1C /* GSFileBaseNetRequest.h */,
+				FE45732A1FCD368800B44F1C /* GSFileBaseNetRequest.m */,
+				FE45731A1FCCF47100B44F1C /* GSINetResponse.h */,
+				FE45731E1FCCF59D00B44F1C /* GSBaseNetResponse.h */,
+				FE45731F1FCCF59D00B44F1C /* GSBaseNetResponse.m */,
+				FE4573241FCCF60200B44F1C /* GSINetError.h */,
+				FE4573251FCCF66800B44F1C /* GSBaseNetError.h */,
+				FE4573261FCCF66800B44F1C /* GSBaseNetError.m */,
 				FEFA0E061F4FB3B50044E23E /* Assets.xcassets */,
 				FEFA0E081F4FB3B50044E23E /* LaunchScreen.storyboard */,
 				FEFA0E0B1F4FB3B50044E23E /* Info.plist */,
@@ -383,9 +416,14 @@
 				FECF48F11FAD59B1006C96EE /* HZHTTPRequestManager.m in Sources */,
 				FECF48F21FAD59B1006C96EE /* HZHTTPRequestModel.m in Sources */,
 				FECF48F31FAD59B1006C96EE /* HZHTTPResponseModel.m in Sources */,
+				FE4573201FCCF59D00B44F1C /* GSBaseNetResponse.m in Sources */,
+				FE45732B1FCD368800B44F1C /* GSFileBaseNetRequest.m in Sources */,
 				FEFA0DFF1F4FB3B50044E23E /* ViewController.m in Sources */,
+				FE45731D1FCCF53D00B44F1C /* GSBaseNetRequest.m in Sources */,
+				FE4573181FCC08C100B44F1C /* GSNetWorkManager.m in Sources */,
 				FEFA0DFC1F4FB3B50044E23E /* AppDelegate.m in Sources */,
 				FEFA0E051F4FB3B50044E23E /* HZNetFrameWork.xcdatamodeld in Sources */,
+				FE4573271FCCF66800B44F1C /* GSBaseNetError.m in Sources */,
 				FEFA0DF91F4FB3B50044E23E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
